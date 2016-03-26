@@ -42,7 +42,7 @@ If you want to use the pagedown editor in a django admin field, there are numero
     from django.db import models
 
 
-    class FooModelAdmin(models.ModelAdmin):
+    class FooModelAdmin(admin.ModelAdmin):
         formfield_overrides = {
             models.TextField: {'widget': AdminPagedownWidget },
         }
